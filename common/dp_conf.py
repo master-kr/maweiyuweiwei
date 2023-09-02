@@ -18,7 +18,7 @@ confs = [
   {'name': 'dp_api_custom', 'default': False, 'type': 'Bool', 'conf_type': ['param']},
   {'name': 'dp_api_custom_url', 'default': 'https://api.retropilot.org', 'type': 'Text', 'depends': [{'name': 'dp_api_custom', 'vals': [True]}], 'conf_type': ['param']},
 
-  {'name': 'dp_atl', 'default': 0, 'type': 'UInt8', 'conf_type': ['param', 'struct'], 'update_once': True},
+  {'name': 'dp_atl', 'default': 1, 'type': 'UInt8', 'conf_type': ['param', 'struct'], 'update_once': True},
 
   {'name': 'dp_locale', 'default': 'en-US', 'type': 'Text', 'conf_type': ['param', 'struct'], 'update_once': True},
   {'name': 'dp_jetson', 'default': True, 'type': 'Bool', 'conf_type': ['param']},
@@ -61,8 +61,8 @@ confs = [
   #ui
   {'name': 'dp_ip_addr', 'default': '', 'type': 'Text', 'conf_type': ['struct']},
   {'name': 'dp_quiet_drive', 'default': 0, 'type': 'UInt8', 'min': 0, 'max': 2, 'conf_type': ['param']},
-  {'name': 'dp_ui_top', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
-  {'name': 'dp_ui_side', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
+  {'name': 'dp_ui_top', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
+  {'name': 'dp_ui_side', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   #{'name': 'dp_ui_volume', 'default': -5, 'type': 'Int8', 'min': -5, 'max': 100, 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_brightness', 'default': 0, 'type': 'UInt8', 'min': 0, 'max': 100, 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_display_mode', 'default': 0, 'type': 'UInt8', 'min': 0, 'max': 4, 'conf_type': ['param', 'struct']},
@@ -72,7 +72,7 @@ confs = [
   {'name': 'dp_ui_lead_info', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_laneline', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_chevron', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
-  {'name': 'dp_ui_dm_cam', 'default': True, 'type': 'Bool', 'conf_type': ['param', 'struct']},
+  {'name': 'dp_ui_dm_cam', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
   {'name': 'dp_ui_rainbow', 'default': False, 'type': 'Bool', 'conf_type': ['param', 'struct']},
 
   #toyota
