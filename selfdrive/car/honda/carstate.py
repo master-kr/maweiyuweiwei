@@ -298,7 +298,7 @@ class CarState(CarStateBase):
 
     # Gets rid of Pedal Grinding noise when brake is pressed at slow speeds for some models
     if self.CP.carFingerprint in (CAR.PILOT, CAR.RIDGELINE):
-      if ret.brake > 0.05:
+      if ret.brake > 0.1:
         ret.brakePressed = True
 
     if self.CP.carFingerprint in HONDA_BOSCH and self.CP.carFingerprint not in HONDA_BOSCH_RADARLESS:
