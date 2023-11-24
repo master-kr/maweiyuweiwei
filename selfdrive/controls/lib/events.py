@@ -396,8 +396,8 @@ EVENTS: Dict[int, Dict[str, Union[Alert, AlertCallbackType]]] = {
   # read-only mode. This can be solved by adding your fingerprint.
   # See https://github.com/commaai/openpilot/wiki/Fingerprinting for more information
   EventName.carUnrecognized: {
-    ET.PERMANENT: NormalPermanentAlert(_("Dashcam Mode"),
-                                       _("Car Unrecognized"),
+    ET.PERMANENT: NormalPermanentAlert(_("Enter the settings"),
+                                       _("select the vehicle model in the blue bar, and restart"),
                                        priority=Priority.LOWEST),
   },
 
