@@ -49,7 +49,7 @@ def manager_init() -> None:
     ("DisableUpdates", "1"),
     ("dp_no_gps_ctrl", "0"),
     ("dp_no_fan_ctrl", "0"),
-    ("dp_logging", "0"),
+    ("dp_logging", "1"),
     ("dp_0813", "1"),
 
     # dp addition
@@ -79,6 +79,7 @@ def manager_init() -> None:
     ("dp_toyota_zss", "0"),
     ("dp_long_accel_btn", "0"),
     ("dp_long_personality_btn", "0"),
+    ("dp_lat_lane_change_assist_speed", "20"),
   ]
   if not PC:
     default_params.append(("LastUpdateTime", datetime.datetime.utcnow().isoformat().encode('utf8')))
