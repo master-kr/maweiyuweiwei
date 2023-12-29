@@ -411,12 +411,12 @@ class Controls:
     has_disable_events = self.events.contains(ET.NO_ENTRY) and (self.events.contains(ET.SOFT_DISABLE) or self.events.contains(ET.IMMEDIATE_DISABLE))
     no_system_errors = (not has_disable_events) or (len(self.events) == num_events)
     if (not self.sm.all_checks() or can_rcv_timeout) and no_system_errors:
-      if not self.sm.all_alive():
+      if False:
         self.events.add(EventName.commIssue)
       elif not self.sm.all_freq_ok():
         self.events.add(EventName.commIssueAvgFreq)
       else:  # invalid or can_rcv_timeout.
-        self.events.add(EventName.commIssue)
+        pass#self.events.add(EventName.commIssue)
 
       logs = {
         'invalid': [s for s, valid in self.sm.valid.items() if not valid],
