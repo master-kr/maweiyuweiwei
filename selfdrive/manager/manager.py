@@ -46,10 +46,10 @@ def manager_init() -> None:
     ("LanguageSetting", "main_en"),
     ("OpenpilotEnabledToggle", "1"),
     ("LongitudinalPersonality", str(log.LongitudinalPersonality.standard)),
-    ("DisableUpdates", "1"),
+    ("DisableUpdates", "O"),
     ("dp_no_gps_ctrl", "0"),
     ("dp_no_fan_ctrl", "0"),
-    ("dp_logging", "1"),
+    ("dp_logging", "O"),
     ("dp_0813", "1"),
 
     # dp addition
