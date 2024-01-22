@@ -4,7 +4,7 @@ from opendbc.can.can_define import CANDefine
 from opendbc.can.parser import CANParser
 from selfdrive.car.interfaces import CarStateBase
 from selfdrive.car.ford.fordcan import CanBus
-from selfdrive.car.ford.values import CAN_EDGE, DBC, CarControllerParams
+from selfdrive.car.ford.values import  DBC, CarControllerParams
 
 GearShifter = car.CarState.GearShifter
 TransmissionType = car.CarParams.TransmissionType
