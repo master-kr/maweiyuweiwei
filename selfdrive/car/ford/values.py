@@ -45,11 +45,12 @@ class CAR:
   ESCAPE_MK4 = "FORD ESCAPE 4TH GEN"
   EXPLORER_MK6 = "FORD EXPLORER 6TH GEN"
   FOCUS_MK4 = "FORD FOCUS 4TH GEN"
+  EDGE_MK2 = "FORD EDGE 2ND GEN"
   MAVERICK_MK1 = "FORD MAVERICK 1ST GEN"
 
 
 CANFD_CARS: Set[str] = set()
-
+CAN_EDGE = {CAR.EDGE_MK2}
 
 class RADAR:
   DELPHI_ESR = 'ford_fusion_2018_adas'
@@ -79,6 +80,7 @@ class FordCarInfo(CarInfo):
 
 CAR_INFO: Dict[str, Union[CarInfo, List[CarInfo]]] = {
   CAR.BRONCO_SPORT_MK1: FordCarInfo("Ford Bronco Sport 2021-22"),
+  CAR.EDGE_MK2: FordCarInfo("Ford Edge 2020-23", "Adaptive Cruise Control with Lane Centering"),
   CAR.ESCAPE_MK4: [
     FordCarInfo("Ford Escape 2020-22"),
     FordCarInfo("Ford Kuga 2020-22", "Adaptive Cruise Control with Lane Centering"),
